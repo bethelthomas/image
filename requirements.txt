@@ -1,6 +1,6 @@
 Keras==2.2.4
-tensorflow-cpu
-opencv-python
+tensorflow-cpu==1.15.0
+opencv-python==4.1.0.25
 numpy==1.17.0
 Flask==1.1.1
 matplotlib==3.1.1
@@ -13,6 +13,3 @@ MarkupSafe==1.1.1
 Werkzeug==1.0.1
 wincertstore==0.2
 python-telegram-bot==13.0
-psycopg2-binary
-tensorflow
-
