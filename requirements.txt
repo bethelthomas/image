@@ -14,3 +14,4 @@ Werkzeug==1.0.1
 wincertstore==0.2
 python-telegram-bot==13.0
 opencv-contrib-python==3.3.0.9
+PyJWT==1.7.1
