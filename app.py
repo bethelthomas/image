@@ -37,7 +37,7 @@ def allowed_file(filename):
 
 
 
-@app.route("/render_template", methods=['GET', 'POST'])
+@app.route("/base", methods=['GET', 'POST'])
 def base():
     if request.method == 'GET':
         return render_template("base.html", output=0)
@@ -64,5 +64,5 @@ def base():
 if __name__ == "__main__":
     app.secret_key = 'qwertyuiop1234567890'
     port = int(os.environ.get('PORT', 5000))
-    app.run(debug=False, host='0.0.0.0', port=port)
+    app.run(debug=True, host='0.0.0.0', port=port)
     
