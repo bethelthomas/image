@@ -57,7 +57,8 @@ def base():
             decode_an_image_file(inp_img)
             output = cv2.imread('h.png')
             _, outputBuffer = cv2.imencode('.jpg', output)
-            OutputBase64String = base64.b64encode('utf-8').decode('utf-8')
+            OutputBase64String1 = base64.b64encode(outputBuffer)
+            OutputBase64String= OutputBase64String1.decode('utf-8')
             return render_template("base.html", img=OutputBase64String, output=1)
 
 
