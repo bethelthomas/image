@@ -37,7 +37,7 @@ def allowed_file(filename):
 
 
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/render_template", methods=['GET', 'POST'])
 def base():
     if request.method == 'GET':
         return render_template("base.html", output=0)
