@@ -16,4 +16,4 @@ python-telegram-bot==13.0
 opencv-contrib-python==3.3.0.9
 PyJWT==1.7.1
 Flask-JWT-Extended
-djangorestframework_simplejwt==4.5.0
+
