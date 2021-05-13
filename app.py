@@ -21,7 +21,7 @@ def decode_an_image_array(rgb, dn=1):
 
 
 def decode_an_image_file(image_file, dn=1):
-    mask = decode_an_image_array(image_file, 1)
+    mask = decode_an_image_array(image_file, dn)
     plt.xticks([])
     plt.yticks([])
     plt.imshow(image_file[::dn, ::dn])
@@ -57,8 +57,8 @@ def base():
             decode_an_image_file(inp_img)
             output = cv2.imread('h.png')
             _, outputBuffer = cv2.imencode('.jpg', output)
-            OutputBase64String1 = base64.b64encode(outputBuffer)
-            OutputBase64String= OutputBase64String1.decode('utf-8')
+            OutputBase64Stringg = base64.b64encode(outputBuffer)
+            OutputBase64String= OutputBase64Stringg.decode('utf-8')
             return render_template("base.html", img=OutputBase64String, output=1)
 
 
