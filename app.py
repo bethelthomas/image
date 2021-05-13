@@ -21,7 +21,7 @@ def decode_an_image_array(rgb, dn=1):
 
 
 def decode_an_image_file(image_file, dn=1):
-    mask = decode_an_image_array(image_file, dn)
+    mask = decode_an_image_array(image_file, 1)
     plt.xticks([])
     plt.yticks([])
     plt.imshow(image_file[::dn, ::dn])
