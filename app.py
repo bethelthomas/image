@@ -36,7 +36,6 @@ def allowed_file(filename):
         filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-
 @app.route("/", methods=['GET', 'POST'])
 def base():
     if request.method == 'GET':
@@ -57,8 +56,7 @@ def base():
             decode_an_image_file(inp_img)
             output = cv2.imread('h.png')
             _, outputBuffer = cv2.imencode('.jpg', output)
-            OutputBase64Stringg = base64.b64encode(outputBuffer)
-            OutputBase64String= OutputBase64Stringg.decode('utf-8')
+            OutputBase64String = base64.b64encode(outputBuffer).decode('utf-8')
             return render_template("base.html", img=OutputBase64String, output=1)
 
 
